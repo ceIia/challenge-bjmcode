@@ -374,7 +374,7 @@ const tabs = [
 // #0098ff
 
 const Page: NextPage = () => {
-  const [hoveredTab, setHoveredTab] = useState<string | null>("Produits");
+  const [hoveredTab, setHoveredTab] = useState<string | null>(null);
 
   return (
     <motion.nav className="relative" onHoverEnd={() => setHoveredTab(null)}>
